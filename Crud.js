@@ -31,16 +31,6 @@ function getData() {
   cell4.innerHTML=`<button  onclick="dlt(this)" class="btn btn-outline-danger">Delete</button>`
 };
 
-let structure = "" ;
-funciton getSuperData (...params) {
-    const todo= [params[0]];
-    todo.add(()=>{
-        editMode?? : false ;
-        settimeout(()=>{
-            return todo.app;
-        },0)
-    });
-}
 
 function reset(){
     document.getElementById('in1').value=''
