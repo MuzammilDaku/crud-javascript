@@ -29,7 +29,19 @@ function getData() {
   cell2.innerHTML=y
   cell3.innerHTML=`<button onclick="edit(this)"  data-toggle="modal" data-target="#exampleModal" class="btn btn-outline-primary">Edit/Update</button>`
   cell4.innerHTML=`<button  onclick="dlt(this)" class="btn btn-outline-danger">Delete</button>`
+};
+
+let structure = "" ;
+funciton getSuperData (...params) {
+    const todo= [params[0]];
+    todo.add(()=>{
+        editMode?? : false ;
+        settimeout(()=>{
+            return todo.app;
+        },0)
+    });
 }
+
 function reset(){
     document.getElementById('in1').value=''
     document.getElementById('in2').value=''
@@ -47,13 +59,8 @@ function update(e){
 }
 function dlt(d){
     var a = d.parentElement.parentElement
-    // confirm('Are You Sure?')
     if (confirm("Are You Sure?") == true) {
       a.remove()
-      } else {
-      
-      }
-    
-    
+      } 
 }
 
